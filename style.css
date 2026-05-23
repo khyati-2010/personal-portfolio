@@ -279,7 +279,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 30px 0;;
+    margin-bottom: 30px;
+    gap: 40px;
 }
 
 .proj-button{
@@ -294,7 +295,7 @@ body{
     border-radius: 50%;
     background: rgba(255,255,255,0.05);
     cursor: pointer;
-    transition: 0.3;
+    transition: 0.3s;
 }
 
 .back:hover , .next:hover{
@@ -395,3 +396,190 @@ body{
     background: rgba(139,92,246,0.2);
 }
 
+.stats{
+    margin:55px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.stat-card{
+    padding: 40px 25px;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.stat-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 35px rgba(139,92,246,0.25);
+}
+
+.stat-card h2{
+    font-size: 2.7rem;
+    background: linear-gradient(to right,#8B5CF6,#22D3EE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 15px;
+}
+
+.stat-card p{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+/* CONNECT */
+
+.connect{
+    margin: 60px;
+    padding: 50px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.connect h2{
+    font-size: 3rem;
+    margin-bottom: 60px;
+    background: linear-gradient(to right,#8B5CF6,#22D3EE);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.connect-thing{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.connect-left{
+    width:40%;
+    height: 100%;
+    padding: 50px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.connect-link{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.connect-anchors{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.connect-anchors a{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    font-size:1.3rem;
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.connect-anchors a:hover{
+    transform: translateY(-3px);
+    background:rgba(139,92,246,0.2);
+    box-shadow: 0 0 20px rgba(139,92,246,0.2);
+}
+
+.connect-anchors p{
+    text-align: left;
+    line-height: 1.5;
+    color: #e2e8f0;
+}
+
+.connect-right{
+    width: 70%;
+}
+
+.connect-form{
+    padding:35px;
+    border-radius:24px;
+    background:rgba(255,255,255,0.03);
+    border:1px solid rgba(255,255,255,0.08);
+    display:flex;
+    flex-direction:column;
+    gap:22px;
+}
+
+.form-top{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.connect-form input{
+    width: 50%;
+}
+
+.connect-form input, 
+.connect-form textarea{
+    padding: 18px 22px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.connect-form input::placeholder, 
+.connect-form textarea::placeholder{
+    color: #94a3b8;
+}
+
+.connect-form input:focus, 
+.connect-form textarea:focus{
+    border-color: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139,92,246,0.25);
+}
+
+.connect-form textarea{
+    min-height:180px;
+    resize:none;
+}
+
+.connect-form button{
+    align-self: center;
+    width: 48%;
+    padding: 16px;
+    border-radius: 18px;
+    background: linear-gradient(to right, #8b5cf6, #22d3ee);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 700;
+    color: white;
+}
+
+.connect-form button:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 0 25px rgba(139,92,246,0.3);
+}
